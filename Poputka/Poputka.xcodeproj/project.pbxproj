@@ -12,6 +12,10 @@
 		338444E92072B8A300043402 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 338444E72072B8A300043402 /* Main.storyboard */; };
 		338444EB2072B8A300043402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 338444EA2072B8A300043402 /* Assets.xcassets */; };
 		338444EE2072B8A300043402 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 338444EC2072B8A300043402 /* LaunchScreen.storyboard */; };
+		338444F82072C00100043402 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338444F72072C00100043402 /* MapViewController.swift */; };
+		338444FA2072C8CD00043402 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338444F92072C8CD00043402 /* FeedViewController.swift */; };
+		338445002072C97800043402 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338444FF2072C97800043402 /* FeedCell.swift */; };
+		338445022072CA2D00043402 /* Placement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338445012072CA2D00043402 /* Placement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		338444EA2072B8A300043402 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		338444ED2072B8A300043402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		338444EF2072B8A300043402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		338444F72072C00100043402 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		338444F92072C8CD00043402 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		338444FF2072C97800043402 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		338445012072CA2D00043402 /* Placement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,9 @@
 		338444E22072B8A300043402 /* Poputka */ = {
 			isa = PBXGroup;
 			children = (
+				338444FB2072C93C00043402 /* Views */,
+				338444F62072B8EA00043402 /* Models */,
+				338444F52072B8E000043402 /* Controllers */,
 				338444E32072B8A300043402 /* AppDelegate.swift */,
 				338444E52072B8A300043402 /* ViewController.swift */,
 				338444E72072B8A300043402 /* Main.storyboard */,
@@ -62,6 +73,31 @@
 				338444EF2072B8A300043402 /* Info.plist */,
 			);
 			path = Poputka;
+			sourceTree = "<group>";
+		};
+		338444F52072B8E000043402 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				338444F72072C00100043402 /* MapViewController.swift */,
+				338444F92072C8CD00043402 /* FeedViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		338444F62072B8EA00043402 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				338445012072CA2D00043402 /* Placement.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		338444FB2072C93C00043402 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				338444FF2072C97800043402 /* FeedCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +173,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				338444E62072B8A300043402 /* ViewController.swift in Sources */,
+				338445002072C97800043402 /* FeedCell.swift in Sources */,
+				338444F82072C00100043402 /* MapViewController.swift in Sources */,
+				338445022072CA2D00043402 /* Placement.swift in Sources */,
+				338444FA2072C8CD00043402 /* FeedViewController.swift in Sources */,
 				338444E42072B8A300043402 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,7 +321,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.neobis.poputka;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -296,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.neobis.poputka;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
