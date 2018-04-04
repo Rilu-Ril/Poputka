@@ -9,13 +9,16 @@
 import Foundation
 
 struct Placement: Decodable {
-	var from: String!
-	var fromLat: String?
-	var fromLong: String?
-	
-	var to: String!
-	
-	var time: String!
-	var comment: String?
+	var id: Int
 	var name: String?
+	var phone: String?
+	var isDriver: Bool?
+	
+	var start_address: String! 
+	var start_latitude: Float?
+	var start_longitude: String?
+	
+	var end_address: String?
+	
+	var start_time: String?
 }

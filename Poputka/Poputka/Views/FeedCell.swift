@@ -21,10 +21,10 @@ class FeedCell: UITableViewCell {
     }
 	
 	func set(data: Placement) {
-		lblFrom.text = data.from
-		lblTo.text = data.to
-		lblDesc.text = data.comment
-		lblTime.text = data.time
+		lblFrom.text = data.start_address
+		lblTo.text = data.end_address
+		lblDesc.text = "Доп инфо"
+		lblTime.text = data.start_time
 	}
 	
 	//call

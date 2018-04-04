@@ -16,11 +16,12 @@ class FeedViewController: UIViewController {
 	
     override func viewDidLoad() {
         super.viewDidLoad()
-		
-		var placement = Placement(from: "АУЦА", fromLat: nil, fromLong: nil, to: "Вефа", time: "28.08.2018 15.09", comment: "Бесплатно", name: "Санира")
-		var placement1 = Placement(from: "Моссовет", fromLat: nil, fromLong: nil, to: "Политех", time: "28.08.2018 15.69", comment: "10 сом", name: "Алиер")
-		placements.append(placement)
-		placements.append(placement1)
+		ServerManager.shared.getPlacements({ (places) in
+			self.placements = places
+			self.tableView.reloadData()
+		}) { (err) in
+			//
+		}
 		
 		tableView.tableFooterView = UIView()
 		tableView.estimatedRowHeight  = 70

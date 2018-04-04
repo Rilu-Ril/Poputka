@@ -16,9 +16,15 @@
 		338444FA2072C8CD00043402 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338444F92072C8CD00043402 /* FeedViewController.swift */; };
 		338445002072C97800043402 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338444FF2072C97800043402 /* FeedCell.swift */; };
 		338445022072CA2D00043402 /* Placement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338445012072CA2D00043402 /* Placement.swift */; };
+		33B35CCF2072D32400A848CC /* HTTPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B35CCE2072D32400A848CC /* HTTPRequestManager.swift */; };
+		33B35CD12072D33100A848CC /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B35CD02072D33100A848CC /* ServerManager.swift */; };
+		33B35CD32072D42300A848CC /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B35CD22072D42300A848CC /* HTTPStatusCode.swift */; };
+		33B35CD62072D6D100A848CC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B35CD52072D6D100A848CC /* Constants.swift */; };
+		805F2DBF6B28C69112D1F759 /* Pods_Poputka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F002689FE410D0339BA51A0 /* Pods_Poputka.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DB17C44EF66439FFF821C39 /* Pods-Poputka.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Poputka.release.xcconfig"; path = "Pods/Target Support Files/Pods-Poputka/Pods-Poputka.release.xcconfig"; sourceTree = "<group>"; };
 		338444E02072B8A300043402 /* Poputka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Poputka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		338444E32072B8A300043402 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		338444E52072B8A300043402 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +36,12 @@
 		338444F92072C8CD00043402 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		338444FF2072C97800043402 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		338445012072CA2D00043402 /* Placement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placement.swift; sourceTree = "<group>"; };
+		33B35CCE2072D32400A848CC /* HTTPRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestManager.swift; sourceTree = "<group>"; };
+		33B35CD02072D33100A848CC /* ServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
+		33B35CD22072D42300A848CC /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
+		33B35CD52072D6D100A848CC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7A075EF07B0E2692C71BA613 /* Pods-Poputka.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Poputka.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Poputka/Pods-Poputka.debug.xcconfig"; sourceTree = "<group>"; };
+		9F002689FE410D0339BA51A0 /* Pods_Poputka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Poputka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				805F2DBF6B28C69112D1F759 /* Pods_Poputka.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +61,8 @@
 			children = (
 				338444E22072B8A300043402 /* Poputka */,
 				338444E12072B8A300043402 /* Products */,
+				5BB4B98C267BCE000D973955 /* Pods */,
+				FA03003B1769DB2A370E7657 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +77,8 @@
 		338444E22072B8A300043402 /* Poputka */ = {
 			isa = PBXGroup;
 			children = (
+				33B35CD42072D6BB00A848CC /* Helpers */,
+				33B35CCD2072D2EB00A848CC /* Network */,
 				338444FB2072C93C00043402 /* Views */,
 				338444F62072B8EA00043402 /* Models */,
 				338444F52072B8E000043402 /* Controllers */,
@@ -100,6 +117,41 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		33B35CCD2072D2EB00A848CC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				33B35CCE2072D32400A848CC /* HTTPRequestManager.swift */,
+				33B35CD02072D33100A848CC /* ServerManager.swift */,
+				33B35CD22072D42300A848CC /* HTTPStatusCode.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		33B35CD42072D6BB00A848CC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				33B35CD52072D6D100A848CC /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5BB4B98C267BCE000D973955 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A075EF07B0E2692C71BA613 /* Pods-Poputka.debug.xcconfig */,
+				1DB17C44EF66439FFF821C39 /* Pods-Poputka.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA03003B1769DB2A370E7657 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F002689FE410D0339BA51A0 /* Pods_Poputka.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 338444F22072B8A300043402 /* Build configuration list for PBXNativeTarget "Poputka" */;
 			buildPhases = (
+				5FE7E89911995CB893DAC8A1 /* [CP] Check Pods Manifest.lock */,
 				338444DC2072B8A300043402 /* Sources */,
 				338444DD2072B8A300043402 /* Frameworks */,
 				338444DE2072B8A300043402 /* Resources */,
+				56205CEDE4ED9EF608816B41 /* [CP] Embed Pods Frameworks */,
+				F320B16F945327A83DEDB9D0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,16 +222,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		56205CEDE4ED9EF608816B41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Poputka/Pods-Poputka-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Poputka/Pods-Poputka-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FE7E89911995CB893DAC8A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Poputka-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F320B16F945327A83DEDB9D0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Poputka/Pods-Poputka-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		338444DC2072B8A300043402 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33B35CD12072D33100A848CC /* ServerManager.swift in Sources */,
 				338444E62072B8A300043402 /* ViewController.swift in Sources */,
 				338445002072C97800043402 /* FeedCell.swift in Sources */,
 				338444F82072C00100043402 /* MapViewController.swift in Sources */,
 				338445022072CA2D00043402 /* Placement.swift in Sources */,
+				33B35CD62072D6D100A848CC /* Constants.swift in Sources */,
 				338444FA2072C8CD00043402 /* FeedViewController.swift in Sources */,
+				33B35CD32072D42300A848CC /* HTTPStatusCode.swift in Sources */,
+				33B35CCF2072D32400A848CC /* HTTPRequestManager.swift in Sources */,
 				338444E42072B8A300043402 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +425,7 @@
 		};
 		338444F32072B8A300043402 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A075EF07B0E2692C71BA613 /* Pods-Poputka.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -327,6 +441,7 @@
 		};
 		338444F42072B8A300043402 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DB17C44EF66439FFF821C39 /* Pods-Poputka.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
